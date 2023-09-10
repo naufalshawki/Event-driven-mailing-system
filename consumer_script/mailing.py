@@ -1,13 +1,9 @@
 from kafka import KafkaConsumer
 import json
 import smtplib
-import os
 import config_var as conf
-from dotenv import load_dotenv
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-
-load_dotenv()
 
 sender_email = conf.sender_email
 sender_password = conf.sender_password
